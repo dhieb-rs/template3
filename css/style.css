@@ -1745,6 +1745,22 @@ a {
     border-top: 1px solid #444;
 }
 /* End Footer */
+.go-up {
+    cursor: pointer;
+    display: none;
+    color: var(--main-color);
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    transition-duration: var(--main-transition);
+    z-index: 100;
+}
+.go-up:hover {
+    color: var(--main-color-alt);
+}
+.go-up i {
+    animation: bouncing 1.5s infinite;
+}
 @keyframes up-and-down {
     0%,
     100% {
